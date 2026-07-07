@@ -417,12 +417,12 @@ function startMinigame1() {
     <div class="loc-container" id="loc-container">
       <div class="loc-scene-col">
         <div class="loc-scene" id="loc-scene">
-          <img src="layers/sky.png" class="layer layer-sky" alt="">
-          <img src="layers/mountains.png" class="layer layer-mountains" alt="">
-          <img src="layers/desert.png" class="layer layer-desert" alt="">
-          <img src="layers/forest.png" class="layer layer-forest" alt="">
-          <img src="layers/river.png" class="layer layer-river" alt="">
-          <img src="layers/sun.png" class="layer layer-sun" alt="">
+        <img src="https://i.imgur.com/SJycBLK.png" class="layer layer-sky" alt="">
+        <img src="https://i.imgur.com/hyNZLnV.png" class="layer layer-mountains" alt="">
+        <img src="https://i.imgur.com/CUFqfCe.png" class="layer layer-desert" alt="">
+        <img src="https://i.imgur.com/n4k62f1.png" class="layer layer-forest" alt="">
+        <img src="https://i.imgur.com/JoQe2qA.png" class="layer layer-river" alt="">
+        <img src="https://i.imgur.com/fkPGunB.png" class="layer layer-sun" alt="">
         </div>
         <p class="game-hint" id="loc-prompt">Where should you build your settlement?</p>
         <p class="game-hint wisdom" id="loc-wisdom">Choose wisely! Your settlement will only thrive with the right environment.</p>
