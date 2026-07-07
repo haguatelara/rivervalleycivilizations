@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Rivers of Civilization</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <div id="progress-header">
+    <div id="progress-inner">
+      <span id="pp-display">🌟 0</span>
+      <span id="civ-display">🏛️ 0/4</span>
+      <span id="star-display">⭐ 0</span>
+    </div>
+    <div id="progress-bar-track"><div id="progress-bar-fill"></div></div>
+  </div>
+
+  <!-- OPENING SCREEN -->
+  <div id="screen-opening" class="screen active">
+    <div class="opening-bg"></div>
+    <h1 class="game-title">Rivers of Civilization</h1>
+    <p class="game-subtitle">Can You Build a Civilization?</p>
+    <div class="map-illustration">
+      <img src="map.png" alt="Map of river valley civilizations" class="map-bg-img">
+      <div class="map-pin" style="left:36%;top:49%">🏛️</div>
+      <div class="map-pin" style="left:17%;top:71%">🔺</div>
+      <div class="map-pin" style="left:56%;top:63%">🐪</div>
+      <div class="map-pin" style="left:84%;top:25%">🐉</div>
+    </div>
+    <button class="btn btn-large btn-start" id="btn-start" aria-label="Start the game">START</button>
+  </div>
+
+  <!-- INTRO SCREEN -->
+  <div id="screen-intro" class="screen">
+    <div class="card intro-card">
+      <h2>Welcome, Young Leader!</h2>
+      <p>Long ago, people settled near rivers because rivers gave them water, fertile soil, transportation, and food.</p>
+      <p>Visit each river and discover what made every civilization unique.</p>
+      <div class="river-icons">🌊 🌊 🌊 🌊</div>
+      <button class="btn btn-primary btn-large" id="btn-begin">BEGIN JOURNEY</button>
+    </div>
+  </div>
+
+  <!-- MAP SCREEN -->
+  <div id="screen-map" class="screen">
+    <h2 class="screen-title">World Map</h2>
+    <p class="screen-desc">Choose a river to explore!</p>
+    <div class="world-map" id="world-map">
+      <img src="map.png" alt="Map of river valley civilizations" class="map-bg-img">
+      <button class="map-location" data-civ="mesopotamia" style="left:36%;top:49%" aria-label="Explore Mesopotamia">
+        <span class="loc-icon">🏛️</span>
+        <span class="loc-name">Mesopotamia</span>
+        <span class="loc-check">✓</span>
+      </button>
+      <button class="map-location" data-civ="egypt" style="left:17%;top:71%" aria-label="Explore Egypt">
+        <span class="loc-icon">🔺</span>
+        <span class="loc-name">Nile</span>
+        <span class="loc-check">✓</span>
+      </button>
+      <button class="map-location" data-civ="indus" style="left:56%;top:63%" aria-label="Explore Indus Valley">
+        <span class="loc-icon">🐪</span>
+        <span class="loc-name">Indus</span>
+        <span class="loc-check">✓</span>
+      </button>
+      <button class="map-location" data-civ="huanghe" style="left:84%;top:25%" aria-label="Explore Huang He">
+        <span class="loc-icon">🐉</span>
+        <span class="loc-name">Huang He</span>
+        <span class="loc-check">✓</span>
+      </button>
+    </div>
+    <button class="btn btn-challenge hidden" id="btn-challenge">🏆 FINAL CHALLENGE</button>
+    <button class="btn btn-small btn-reset" id="btn-reset">↻ Reset Progress</button>
+  </div>
+
+  <!-- CIV GAME SCREEN -->
+  <div id="screen-civ" class="screen">
+    <div class="civ-header">
+      <div id="civ-back" class="back-btn" aria-label="Back to map">← Back</div>
+      <h2 id="civ-title" class="screen-title"></h2>
+    </div>
+    <div id="civ-game-area"></div>
+  </div>
+
+  <!-- SUMMARY SCREEN -->
+  <div id="screen-summary" class="screen">
+    <div class="card summary-card" id="summary-card">
+      <h2 id="summary-title"></h2>
+      <div id="summary-content"></div>
+      <button class="btn btn-primary" id="btn-summary-done">Back to Map</button>
+    </div>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="screen-quiz" class="screen">
+    <h2 class="screen-title">🏆 Civilization Showdown</h2>
+    <div id="quiz-progress">Question <span id="quiz-num">1</span> of 20</div>
+    <div id="quiz-card" class="card"></div>
+    <div id="quiz-feedback" class="quiz-feedback"></div>
+  </div>
+
+  <!-- SCORE SCREEN -->
+  <div id="screen-score" class="screen">
+    <div class="card score-card">
+      <h2 id="score-title"></h2>
+      <div id="score-rank" class="score-rank"></div>
+      <div id="score-stars"></div>
+      <p id="score-text"></p>
+      <p id="score-detail"></p>
+      <button class="btn btn-primary btn-large" id="btn-replay">Play Again</button>
+    </div>
+  </div>
+
+
+</div>
+
+<div id="confetti-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
