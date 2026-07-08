@@ -4,7 +4,7 @@
 // ===================== DATA =====================
 const CIVS = [
   {
-    id:'mesopotamia', name:'Mesopotamia', river:'Tigris and Euphrates', emoji:'🏛️',
+    id:'mesopotamia', name:'Mesopotamia', fullName:'the Mesopotamian Civilization', river:'Tigris and Euphrates', emoji:'🏛️',
     color:'#C49A6C', funFact:'Known as the Cradle of Civilization',
     keyIdeas:'Between the Tigris and Euphrates rivers. Invented writing, the wheel, and written laws. Built ziggurats and irrigation systems.',
     locationDesc:'Between the Tigris and Euphrates rivers in the Fertile Crescent.',
@@ -12,33 +12,34 @@ const CIVS = [
     locFeedback:'Excellent! Mesopotamia was located between the Tigris and Euphrates rivers. The rivers provided water for drinking, farming, and transportation.',
     riverFact:'Flooding is a major problem brought by the rivers, so the Mesopotamians learned to dig channels to irrigate the dry lands and save water when needed. They became very successful, resulting in a surplus of food products.',
     correctGeo:[
-      {icon:'🌊',text:'Between Tigris and Euphrates'},
-      {icon:'⚠️',text:'Unpredictable flooding'},
-      {icon:'🏞️',text:'Open plains'},
-      {icon:'💧',text:'Needed irrigation systems'}
+      {icon:'🌊',text:'Between Tigris and Euphrates',desc:'The land between two rivers'},
+      {icon:'⚠️',text:'Unpredictable flooding',desc:'Could destroy crops'},
+      {icon:'🏞️',text:'Open plains',desc:'Flat land for farming'},
+      {icon:'💧',text:'Needed irrigation systems',desc:'Man-made water channels'}
     ],
     wrongGeo:[
-      {icon:'🏜️',text:'Desert protection'},
-      {icon:'🌊',text:'Predictable flooding'},
-      {icon:'📐',text:'Planned grid cities'},
-      {icon:'💛',text:'Loess soil'}
+      {icon:'🏜️',text:'Desert protection',desc:'Natural barriers'},
+      {icon:'🌊',text:'Predictable flooding',desc:'Regular annual floods'},
+      {icon:'📐',text:'Planned grid cities',desc:'Organized street layout'},
+      {icon:'💛',text:'Loess soil',desc:'Fine yellow silt'}
     ],
     achievements:[
-      {name:'Wheel',icon:'🛞',desc:'Used for pottery and transport'},
-      {name:'Cuneiform',icon:'✍️',desc:'First writing system'},
-      {name:'Ziggurat',icon:'🏗️',desc:'Massive temple towers'},
       {name:'Code of Hammurabi',icon:'📜',desc:'Written laws'},
-      {name:'Irrigation',icon:'💦',desc:'Canals for farming'}
+      {name:'Math System Based on Number 60',icon:'🔢',desc:'Base-60 counting system'},
+      {name:'Cuneiform',icon:'✍️',desc:'First writing system'},
+      {name:'Ziggurat',icon:'🏗️',desc:'Massive temple towers'}
     ],
     wrongAch:[
       {name:'Pyramids',icon:'🔺',desc:'Giant tombs for pharaohs'},
-      {name:'Papyrus',icon:'📄',desc:'Paper-like material'},
-      {name:'Silk',icon:'🧵',desc:'Luxury fabric from China'},
-      {name:'Oracle bones',icon:'🦴',desc:'Used for divination'}
-    ]
-  },
-  {
-    id:'egypt', name:'Egypt', river:'Nile', emoji:'🔺',
+      {name:'Mummification',icon:'⚰️',desc:'Preserving bodies'},
+      {name:'Paper',icon:'📄',desc:'Paper-like sheets'},
+      {name:'Silk Production',icon:'🧵',desc:'Luxury fabric from silkworms'}
+    ],
+    summaryTitle:'Where Civilization Was Born!',
+    summaryDesc:'Between the Tigris and Euphrates Rivers, Mesopotamia became the world\'s first civilization. It gave us the first cities, writing (cuneiform), laws, and inventions that changed history forever!',
+    summaryTagline:'The First to Write, Build, and Rule!'
+  }, {
+    id:'egypt', name:'Egypt', fullName:'the Ancient Egyptian Civilization', river:'Nile', emoji:'🔺',
     color:'#E8B84B', funFact:'The Nile flooded at the same time every year, making farming predictable and reliable.',
     keyIdeas:'Built along the Nile River. Known for pyramids, hieroglyphics, papyrus, and a 365-day calendar.',
     locationDesc:'Along the banks of the Nile River in northeast Africa.',
@@ -46,33 +47,35 @@ const CIVS = [
     locFeedback:'Perfect! Egypt was built along the Nile River. The Nile provided water in the middle of a desert and its predictable flooding made farming easy.',
     riverFact:'It helped Egyptian farmers create a good system of irrigation canals and plow for farming wheat, barley, and flax that are staple foods. The river also helped for transportation and communication. It is a source of food and sports for the Egyptians who are skilled in boatmaking.',
     correctGeo:[
-      {icon:'🌊',text:'Nile River'},
-      {icon:'📅',text:'Predictable flooding'},
-      {icon:'🏜️',text:'Desert protection'},
-      {icon:'🌾',text:'Excellent farming'}
+      {icon:'🌊',text:'Nile River',desc:'World\'s longest river'},
+      {icon:'📅',text:'Predictable flooding',desc:'Regular annual floods'},
+      {icon:'🏜️',text:'Desert protection',desc:'Natural barriers from invaders'},
+      {icon:'🌾',text:'Excellent farming',desc:'Rich fertile soil'}
     ],
     wrongGeo:[
-      {icon:'⚠️',text:'Unpredictable flooding'},
-      {icon:'🏞️',text:'Open plains'},
-      {icon:'💛',text:'Loess soil'},
-      {icon:'🌊',text:'Two rivers'}
+      {icon:'⚠️',text:'Unpredictable flooding',desc:'Could destroy crops'},
+      {icon:'🏞️',text:'Open plains',desc:'Flat land'},
+      {icon:'💛',text:'Loess soil',desc:'Fine yellow silt'},
+      {icon:'🌊',text:'Two rivers',desc:'Land between two rivers'}
     ],
     achievements:[
       {name:'Pyramids',icon:'🔺',desc:'Massive royal tombs'},
-      {name:'Hieroglyphics',icon:'🖋️',desc:'Picture writing'},
-      {name:'Papyrus',icon:'📜',desc:'Paper-like sheets'},
-      {name:'Calendar',icon:'📅',desc:'365-day solar calendar'},
-      {name:'Mummification',icon:'⚰️',desc:'Preserving bodies'}
+      {name:'Mummification',icon:'⚰️',desc:'Preserving bodies'},
+      {name:'Paper',icon:'📜',desc:'Paper-like sheets'},
+      {name:'Advanced Medical Tools',icon:'🩺',desc:'Surgical instruments'}
     ],
     wrongAch:[
-      {name:'Wheel',icon:'🛞',desc:'Used for pottery'},
       {name:'Cuneiform',icon:'✍️',desc:'Wedge-shaped writing'},
-      {name:'Silk',icon:'🧵',desc:'Luxury fabric'},
-      {name:'Grid streets',icon:'📐',desc:'Planned city layout'}
-    ]
+      {name:'Ziggurat',icon:'🏗️',desc:'Temple towers'},
+      {name:'Code of Hammurabi',icon:'📜',desc:'Written laws'},
+      {name:'Toilet',icon:'🚽',desc:'Indoor toilets in homes'}
+    ],
+    summaryTitle:'The Kingdom of the Nile!',
+    summaryDesc:'Along the mighty Nile River, the Egyptians built gigantic pyramids, mysterious mummies, and magnificent temples. Their advanced knowledge of farming, engineering, and medicine amazed the ancient world.',
+    summaryTagline:'Where Pharaohs Reached for Eternity!'
   },
   {
-    id:'indus', name:'Indus Valley', river:'Indus', emoji:'🐪',
+    id:'indus', name:'Indus Valley', fullName:'the Indus Valley Civilization', river:'Indus', emoji:'🐪',
     color:'#7CB342', funFact:'Indus cities like Mohenjo-Daro had advanced drainage systems and grid street planning.',
     keyIdeas:'Located along the Indus River. Known for planned cities, advanced drainage, standardized weights, and extensive trade.',
     locationDesc:'Along the Indus River in modern-day Pakistan and India.',
@@ -80,33 +83,35 @@ const CIVS = [
     locFeedback:'Great choice! The Indus Valley civilization grew along the Indus River. The river made farming possible and rivers were used for trade.',
     riverFact:'Floodwater from the river helped in irrigation for agriculture. It also assisted in the great engineering feats of the Indus civilization in plumbing baths, drain, and sewerage.',
     correctGeo:[
-      {icon:'🌊',text:'Indus River'},
-      {icon:'🌧️',text:'Seasonal flooding'},
-      {icon:'📐',text:'Planned grid cities'},
-      {icon:'🚢',text:'Trade routes'}
+      {icon:'🌊',text:'Indus River',desc:'Major river of South Asia'},
+      {icon:'🌧️',text:'Seasonal flooding',desc:'Deposited rich soil'},
+      {icon:'📐',text:'Planned grid cities',desc:'Organized street layout'},
+      {icon:'🚢',text:'Trade routes',desc:'Connected to other civilizations'}
     ],
     wrongGeo:[
-      {icon:'🏜️',text:'Desert protection'},
-      {icon:'💛',text:'Loess soil'},
-      {icon:'⚠️',text:'Unpredictable flooding'},
-      {icon:'🌊',text:'Two rivers'}
+      {icon:'🏜️',text:'Desert protection',desc:'Natural barriers'},
+      {icon:'💛',text:'Loess soil',desc:'Fine yellow silt'},
+      {icon:'⚠️',text:'Unpredictable flooding',desc:'Could destroy crops'},
+      {icon:'🌊',text:'Two rivers',desc:'Land between two rivers'}
     ],
     achievements:[
-      {name:'Grid cities',icon:'📐',desc:'Planned street layouts'},
-      {name:'Drainage system',icon:'🚰',desc:'Advanced sewers'},
-      {name:'Standardized weights',icon:'⚖️',desc:'Fair trade measures'},
-      {name:'Trade',icon:'🚢',desc:'Traded with other civilizations'},
-      {name:'Public baths',icon:'🛁',desc:'Great Bath at Mohenjo-Daro'}
+      {name:'Public baths',icon:'🛁',desc:'Great Bath at Mohenjo-Daro'},
+      {name:'Grid-Planned City',icon:'📐',desc:'Planned street layouts'},
+      {name:'Toilet',icon:'🚽',desc:'Indoor toilets in homes'},
+      {name:'Drainage Systems in Houses',icon:'🚰',desc:'Advanced sewers'}
     ],
     wrongAch:[
       {name:'Pyramids',icon:'🔺',desc:'Giant tombs'},
-      {name:'Cuneiform',icon:'✍️',desc:'Wedge writing'},
-      {name:'Paper',icon:'📄',desc:'Writing material'},
-      {name:'Mummification',icon:'⚰️',desc:'Body preservation'}
-    ]
+      {name:'Mummification',icon:'⚰️',desc:'Body preservation'},
+      {name:'Silk Production',icon:'🧵',desc:'Luxury fabric'},
+      {name:'Tea',icon:'🍵',desc:'Popular drink from leaves'}
+    ],
+    summaryTitle:'The Cleanest Ancient City!',
+    summaryDesc:'The people of the Indus Valley built well-planned cities with straight roads, brick houses, and even indoor bathrooms and drainage systems—thousands of years before modern plumbing!',
+    summaryTagline:'Ancient Cities Ahead of Their Time!'
   },
   {
-    id:'huanghe', name:'Huang He', river:'Yellow River', emoji:'🐉',
+    id:'huanghe', name:'Huang He', fullName:'the Huang He Civilization', river:'Yellow River', emoji:'🐉',
     color:'#E8C870', funFact:'The Yellow River is called "China\'s Sorrow" because of its dangerous flooding.',
     keyIdeas:'Built along the Yellow River (Huang He). Known for silk, bronze casting, oracle bones, and flood control systems.',
     locationDesc:'Along the Yellow River (Huang He) in northern China.',
@@ -114,39 +119,96 @@ const CIVS = [
     locFeedback:'Excellent! The Huang He (Yellow River) civilization developed along the Yellow River in China. The river provided water but also brought dangerous floods that required control measures.',
     riverFact:'The banks of the river and the fertile floodplains allowed early Chinese to plant millet rice, oats, barley and soybeans. It provides water for irrigation, fishing and transportation. It is called the River of Sorrows due to the violent floods that brings death and destruction, which the early Chinese learned to dredge the river channel and construct dikes to lessen the danger of floods.',
     correctGeo:[
-      {icon:'🌊',text:'Yellow River'},
-      {icon:'💛',text:'Loess soil'},
-      {icon:'⚠️',text:'Dangerous flooding'},
-      {icon:'🏗️',text:'Built levees'}
+      {icon:'🌊',text:'Yellow River',desc:'China\'s second longest river'},
+      {icon:'💛',text:'Loess soil',desc:'Fine yellow silt'},
+      {icon:'⚠️',text:'Dangerous flooding',desc:'Could destroy villages'},
+      {icon:'🏗️',text:'Built levees',desc:'Man-made river walls'}
     ],
     wrongGeo:[
-      {icon:'📅',text:'Predictable flooding'},
-      {icon:'🏜️',text:'Desert protection'},
-      {icon:'📐',text:'Planned grid cities'},
-      {icon:'🌊',text:'Two rivers'}
+      {icon:'📅',text:'Predictable flooding',desc:'Regular annual floods'},
+      {icon:'🏜️',text:'Desert protection',desc:'Natural barriers'},
+      {icon:'📐',text:'Planned grid cities',desc:'Organized street layout'},
+      {icon:'🌊',text:'Two rivers',desc:'Land between two rivers'}
     ],
     achievements:[
-      {name:'Silk',icon:'🧵',desc:'Luxury fabric from silkworms'},
-      {name:'Oracle bones',icon:'🦴',desc:'Used for fortune telling'},
-      {name:'Bronze casting',icon:'🏺',desc:'Advanced metalwork'},
-      {name:'Ancestor worship',icon:'🙏',desc:'Honoring family ancestors'},
-      {name:'Mandate of Heaven',icon:'👑',desc:'Ruler chosen by gods'}
+      {name:'Silk Production',icon:'🧵',desc:'Luxury fabric from silkworms'},
+      {name:'Oracle Bone Scripts',icon:'🦴',desc:'Used for fortune telling'},
+      {name:'Flood Control',icon:'🏗️',desc:'Dikes and levees'},
+      {name:'Tea',icon:'🍵',desc:'Popular drink from leaves'}
     ],
     wrongAch:[
-      {name:'Papyrus',icon:'📄',desc:'Paper material'},
-      {name:'Ziggurat',icon:'🏗️',desc:'Temple towers'},
-      {name:'Mummification',icon:'⚰️',desc:'Preserving bodies'},
-      {name:'Cuneiform',icon:'✍️',desc:'Wedge writing'}
-    ]
+      {name:'Code of Hammurabi',icon:'📜',desc:'Written laws'},
+      {name:'Cuneiform',icon:'✍️',desc:'Wedge writing'},
+      {name:'Pyramids',icon:'🔺',desc:'Giant tombs'},
+      {name:'Paper',icon:'📄',desc:'Paper material'}
+    ],
+    summaryTitle:'The Cradle of Chinese Civilization!',
+    summaryDesc:'The fertile lands around the Yellow River helped ancient China grow into a powerful civilization. It is known for silk, bronze craftsmanship, early writing, and inventions that shaped Chinese culture for thousands of years.',
+    summaryTagline:'Where China\'s Great Story Began!'
   }
 ];
+
+// ===================== IMAGE URL MAPS =====================
+const GEO_IMAGES = {
+  'river':'https://i.imgur.com/8fPKdDu.png',
+  'mountain':'https://i.imgur.com/eEpGjyF.png',
+  'desert':'https://i.imgur.com/87g1V9B.png',
+  'forest':'https://i.imgur.com/3bnfbd6.png',
+  'Unpredictable flooding':'https://i.imgur.com/F4RyFOo.png',
+  'Dangerous flooding':'https://i.imgur.com/LpJQ8LI.png',
+  'Needed irrigation systems':'https://i.imgur.com/7f0asJh.png',
+  'Predictable flooding':'https://i.imgur.com/MNLNaZQ.png',
+  'Excellent farming':'https://i.imgur.com/7yBlnIo.png',
+  'Seasonal flooding':'https://i.imgur.com/Pm3rB3K.png',
+  'Open plains':'https://i.imgur.com/p9AzCRQ.png',
+  'Desert protection':'https://i.imgur.com/87g1V9B.png',
+  'Between Tigris and Euphrates':'https://i.imgur.com/8fPKdDu.png',
+  'Nile River':'https://i.imgur.com/8fPKdDu.png',
+  'Indus River':'https://i.imgur.com/8fPKdDu.png',
+  'Yellow River':'https://i.imgur.com/8fPKdDu.png',
+  'Two rivers':'https://i.imgur.com/8fPKdDu.png',
+  'Loess soil':'https://i.imgur.com/yKyOV3B.png',
+  'Trade routes':'https://i.imgur.com/BXpuGb4.png',
+  'Built levees':'https://i.imgur.com/9CXFnxG.png'
+};
+
+const ACH_IMAGES = {
+  'Code of Hammurabi':'https://i.imgur.com/MgMu8oa.png',
+  'Math System Based on Number 60':'https://i.imgur.com/Uhh0aU8.png',
+  'Cuneiform':'https://i.imgur.com/Lxnhr8G.png',
+  'Ziggurat':'https://i.imgur.com/J1j9TGG.png',
+  'Pyramids':'https://i.imgur.com/tpDGetb.png',
+  'Mummification':'https://i.imgur.com/LdnL5Ds.png',
+  'Paper':'https://i.imgur.com/7fzlumF.png',
+  'Advanced Medical Tools':'https://i.imgur.com/sHykBCD.png',
+  'Public baths':'https://i.imgur.com/5gk5mSQ.png',
+  'Grid-Planned City':'https://i.imgur.com/i6VMe1m.png',
+  'Toilet':'https://i.imgur.com/Cd8g1NC.png',
+  'Drainage Systems in Houses':'https://i.imgur.com/45OV0qF.png',
+  'Silk Production':'https://i.imgur.com/RFs4mm5.png',
+  'Oracle Bone Scripts':'https://i.imgur.com/uiihMyF.png',
+  'Flood Control':'https://i.imgur.com/Lu5dpyZ.png',
+  'Tea':'https://i.imgur.com/6ypJ8D1.png'
+};
+
+const CIV_IMAGES = {
+  'Mesopotamia':'https://i.imgur.com/cYt05bK.png',
+  'Egypt':'https://i.imgur.com/JRmx27O.png',
+  'Indus':'https://i.imgur.com/zFAZ7X4.png',
+  'Huang He':'https://i.imgur.com/EP20rHx.png'
+};
+
+function imgHtml(key, fallback) {
+  const url = GEO_IMAGES[key] || ACH_IMAGES[key];
+  return url ? `<img src="${url}" class="icon-img" alt="">` : fallback;
+}
 
 // ===================== QUESTION BANK =====================
 function buildQuestionBank() {
   const bank = [];
   CIVS.forEach(c => {
     bank.push({
-      q:`Which river is associated with ${c.name}?`,
+      q:`Which river is associated with ${c.fullName}?`,
       opts:[c.river, ...CIVS.filter(x=>x.id!==c.id).map(x=>x.river)].sort(()=>Math.random()-0.5),
       correct:0, // Will be set below
       type:'river', civ:c.id
@@ -161,7 +223,7 @@ function buildQuestionBank() {
     const achWrong = allWrongAch.sort(()=>Math.random()-0.5).slice(0,3);
     const achOpts = [achCorrect.name, ...achWrong.map(x=>x.name)].sort(()=>Math.random()-0.5);
     bank.push({
-      q:`Which achievement belongs to ${c.name}?`,
+      q:`Which achievement belongs to ${c.fullName}?`,
       opts:achOpts,
       correct:achOpts.indexOf(achCorrect.name),
       type:'achievement', civ:c.id
@@ -173,7 +235,7 @@ function buildQuestionBank() {
     const geoWrong = allWrongGeo.sort(()=>Math.random()-0.5).slice(0,3);
     const geoOpts = [geoCorrect.text, ...geoWrong.map(x=>x.text)].sort(()=>Math.random()-0.5);
     bank.push({
-      q:`Which geographic feature matches ${c.name}?`,
+      q:`Which geographic feature matches ${c.fullName}?`,
       opts:geoOpts,
       correct:geoOpts.indexOf(geoCorrect.text),
       type:'geography', civ:c.id
@@ -188,19 +250,19 @@ function buildQuestionBank() {
     ];
     const myDesc = descs.find(d=>d.civ===c.id);
     if (myDesc) {
-      const descOpts = CIVS.map(x=>x.name).sort(()=>Math.random()-0.5);
+      const descOpts = ['The Mesopotamian Civilization','The Ancient Egyptian Civilization','The Indus Valley Civilization','The Huang He Civilization'].sort(()=>Math.random()-0.5);
       bank.push({
         q:`"${myDesc.text}" Which civilization is this?`,
         opts:descOpts,
-        correct:descOpts.indexOf(c.name),
+        correct:descOpts.indexOf('The '+c.fullName.slice(4)),
         type:'description', civ:c.id
       });
     }
 
     // True/False
     const tfs = [
-      {text:`${c.name} developed along the ${c.river}.`, tf:true, civ:c.id},
-      {text:`${c.name} was located in South America.`, tf:false, civ:c.id},
+      {text:`${c.fullName} developed along the ${c.river}.`, tf:true, civ:c.id},
+      {text:`${c.fullName} was located in South America.`, tf:false, civ:c.id},
     ];
     tfs.forEach(tf=>{
       const tfOpts = ['True','False'];
@@ -417,21 +479,21 @@ function startMinigame1() {
     <div class="loc-container" id="loc-container">
       <div class="loc-scene-col">
         <div class="loc-scene" id="loc-scene">
-        <img src="https://i.imgur.com/SJycBLK.png" class="layer layer-sky" alt="">
-        <img src="https://i.imgur.com/hyNZLnV.png" class="layer layer-mountains" alt="">
-        <img src="https://i.imgur.com/CUFqfCe.png" class="layer layer-desert" alt="">
-        <img src="https://i.imgur.com/n4k62f1.png" class="layer layer-forest" alt="">
-        <img src="https://i.imgur.com/JoQe2qA.png" class="layer layer-river" alt="">
-        <img src="https://i.imgur.com/fkPGunB.png" class="layer layer-sun" alt="">
+        <img src="layers/sky.png" class="layer layer-sky" alt="">
+        <img src="layers/mountains.png" class="layer layer-mountains" alt="">
+        <img src="layers/desert.png" class="layer layer-desert" alt="">
+        <img src="layers/forest.png" class="layer layer-forest" alt="">
+        <img src="layers/river.png" class="layer layer-river" alt="">
+        <img src="layers/sun.png" class="layer layer-sun" alt="">
         </div>
         <p class="game-hint" id="loc-prompt">Where should you build your settlement?</p>
         <p class="game-hint wisdom" id="loc-wisdom">Choose wisely! Your settlement will only thrive with the right environment.</p>
       </div>
       <div class="loc-options" id="loc-options">
-        <div class="loc-option" data-val="river"><span class="loc-opt-icon">🌊</span>Near the River</div>
-        <div class="loc-option" data-val="mountain"><span class="loc-opt-icon">⛰️</span>On the Mountain</div>
-        <div class="loc-option" data-val="desert"><span class="loc-opt-icon">🏜️</span>In the Desert</div>
-        <div class="loc-option" data-val="forest"><span class="loc-opt-icon">🌲</span>Deep in the Forest</div>
+        <div class="loc-option" data-val="river"><span class="loc-opt-icon"><img src="https://i.imgur.com/8fPKdDu.png" class="icon-img" alt=""></span>Near the River</div>
+        <div class="loc-option" data-val="mountain"><span class="loc-opt-icon"><img src="https://i.imgur.com/eEpGjyF.png" class="icon-img" alt=""></span>On the Mountain</div>
+        <div class="loc-option" data-val="desert"><span class="loc-opt-icon"><img src="https://i.imgur.com/87g1V9B.png" class="icon-img" alt=""></span>In the Desert</div>
+        <div class="loc-option" data-val="forest"><span class="loc-opt-icon"><img src="https://i.imgur.com/3bnfbd6.png" class="icon-img" alt=""></span>Deep in the Forest</div>
       </div>
     </div>
     <div id="loc-feedback" class="feedback-area"></div>
@@ -509,8 +571,8 @@ function startMinigame2() {
     <div class="geo-grid" id="geo-grid">
       ${allItems.map((item,i)=>`
         <div class="geo-item" data-idx="${i}" data-correct="${item.isCorrect}">
-          <span class="geo-icon">${item.icon}</span>
-          <span>${item.text}</span>
+          <span class="geo-icon">${imgHtml(item.text, item.icon)}</span>
+          <div><span>${item.text}</span><br><span class="item-desc">${item.desc || ''}</span></div>
         </div>
       `).join('')}
     </div>
@@ -587,8 +649,8 @@ function startMinigame3() {
     <div class="ach-grid" id="ach-grid">
       ${allAch.map((a,i)=>`
         <div class="ach-item" data-idx="${i}" data-correct="${a.isCorrect}">
-          <span class="ach-icon">${a.icon}</span>
-          <span>${a.name}</span>
+          <span class="ach-icon">${imgHtml(a.name, a.icon)}</span>
+          <div><span>${a.name}</span><br><span class="item-desc">${a.desc || ''}</span></div>
         </div>
       `).join('')}
     </div>
@@ -659,19 +721,23 @@ function startMinigame3() {
 // ===================== SUMMARY =====================
 function showSummary(civ) {
   showScreen('screen-summary');
-  $('summary-title').textContent = `${civ.emoji} ${civ.name}`;
-  const achList = civ.achievements.map(a=>`<li>✓ ${a.icon} ${a.name}</li>`).join('');
+  const civImg = CIV_IMAGES[civ.name];
+  const titleImg = civImg ? '<img src="' + civImg + '" class="summary-civ-img" alt="">' : civ.emoji;
+  $('summary-title').innerHTML = titleImg + ' ' + civ.summaryTitle;
+  const achList = civ.achievements.map(a=>`<li>${imgHtml(a.name, a.icon)} ${a.name}</li>`).join('');
+  const geoList = civ.correctGeo.map(g=>imgHtml(g.text, g.icon) + ' ' + g.text).join(', ');
   $('summary-content').innerHTML = `
+    <div class="summary-desc">${civ.summaryDesc}</div>
     <div class="summary-row"><span class="label">River:</span><span>${civ.river}</span></div>
     <div class="summary-row"><span class="label">Location:</span><span>${civ.locationDesc}</span></div>
-    <div class="summary-row"><span class="label">Geography:</span><span>${civ.correctGeo.map(g=>g.icon+' '+g.text).join(', ')}</span></div>
+    <div class="summary-row"><span class="label">Geography:</span><span class="summary-geo">${geoList}</span></div>
     <div style="margin:12px 0"><strong>Achievements:</strong></div>
     <ul class="achievement-list">${achList}</ul>
     <div class="remember-box">
-      <h3>🌟 Remember This!</h3>
+      <h3><img src="https://i.imgur.com/AVgSVAd.png" class="remember-star-img" alt=""> Remember This!</h3>
       <p>${civ.keyIdeas}</p>
     </div>
-    <div class="summary-row" style="margin-top:10px"><span class="label">Fun Fact:</span><span>${civ.funFact}</span></div>
+    <div class="summary-tagline">${civ.summaryTagline}</div>
   `;
 }
 

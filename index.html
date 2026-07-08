@@ -24,11 +24,11 @@
     <h1 class="game-title">Rivers of Civilization</h1>
     <p class="game-subtitle">Can You Build a Civilization?</p>
     <div class="map-illustration">
-      <img src="https://i.imgur.com/m9T0kNL.png" alt="Map of river valley civilizations" class="map-bg-img">
-      <div class="map-pin" style="left:36%;top:49%">🏛️</div>
-      <div class="map-pin" style="left:17%;top:71%">🔺</div>
-      <div class="map-pin" style="left:56%;top:63%">🐪</div>
-      <div class="map-pin" style="left:84%;top:25%">🐉</div>
+      <img src="map.png" alt="Map of river valley civilizations" class="map-bg-img">
+      <div class="map-pin" style="left:36%;top:49%"><img src="https://i.imgur.com/cYt05bK.png" class="pin-icon-img" alt=""></div>
+      <div class="map-pin" style="left:17%;top:71%"><img src="https://i.imgur.com/JRmx27O.png" class="pin-icon-img" alt=""></div>
+      <div class="map-pin" style="left:56%;top:63%"><img src="https://i.imgur.com/zFAZ7X4.png" class="pin-icon-img" alt=""></div>
+      <div class="map-pin" style="left:84%;top:25%"><img src="https://i.imgur.com/EP20rHx.png" class="pin-icon-img" alt=""></div>
     </div>
     <button class="btn btn-large btn-start" id="btn-start" aria-label="Start the game">START</button>
   </div>
@@ -49,24 +49,24 @@
     <h2 class="screen-title">World Map</h2>
     <p class="screen-desc">Choose a river to explore!</p>
     <div class="world-map" id="world-map">
-      <img src="https://i.imgur.com/m9T0kNL.png" alt="Map of river valley civilizations" class="map-bg-img">
+      <img src="map.png" alt="Map of river valley civilizations" class="map-bg-img">
       <button class="map-location" data-civ="mesopotamia" style="left:36%;top:49%" aria-label="Explore Mesopotamia">
-        <span class="loc-icon">🏛️</span>
+        <span class="loc-icon"><img src="https://i.imgur.com/cYt05bK.png" class="loc-icon-img" alt=""></span>
         <span class="loc-name">Mesopotamia</span>
         <span class="loc-check">✓</span>
       </button>
       <button class="map-location" data-civ="egypt" style="left:17%;top:71%" aria-label="Explore Egypt">
-        <span class="loc-icon">🔺</span>
+        <span class="loc-icon"><img src="https://i.imgur.com/JRmx27O.png" class="loc-icon-img" alt=""></span>
         <span class="loc-name">Nile</span>
         <span class="loc-check">✓</span>
       </button>
       <button class="map-location" data-civ="indus" style="left:56%;top:63%" aria-label="Explore Indus Valley">
-        <span class="loc-icon">🐪</span>
+        <span class="loc-icon"><img src="https://i.imgur.com/zFAZ7X4.png" class="loc-icon-img" alt=""></span>
         <span class="loc-name">Indus</span>
         <span class="loc-check">✓</span>
       </button>
       <button class="map-location" data-civ="huanghe" style="left:84%;top:25%" aria-label="Explore Huang He">
-        <span class="loc-icon">🐉</span>
+        <span class="loc-icon"><img src="https://i.imgur.com/EP20rHx.png" class="loc-icon-img" alt=""></span>
         <span class="loc-name">Huang He</span>
         <span class="loc-check">✓</span>
       </button>
@@ -96,7 +96,7 @@
   <!-- QUIZ SCREEN -->
   <div id="screen-quiz" class="screen">
     <h2 class="screen-title">🏆 Civilization Showdown</h2>
-    <div id="quiz-progress">Question <span id="quiz-num">1</span> of 20</div>
+    <div id="quiz-progress">Question <span id="quiz-num">1</span> of 10</div>
     <div id="quiz-card" class="card"></div>
     <div id="quiz-feedback" class="quiz-feedback"></div>
   </div>
